@@ -139,6 +139,7 @@ class CustomerService {
     }
 
     async SubscribeEvents(payload){
+        console.log(payload);
  
         const { event, data } =  payload;
 
@@ -158,6 +159,9 @@ class CustomerService {
             case 'CREATE_ORDER':
                 this.ManageOrder(userId,order);
                 break;
+            case 'TEST' : 
+                console.log("im test");
+                break;    
             default:
                 break;
         }
