@@ -1,5 +1,6 @@
 const { ProductModel } = require("../models");
 const { APIError, BadRequestError } = require("../../utils/app-errors");
+const {PublishCustomerEvent, PublishShoppingEvent} = require("../../utils")
 
 //Dealing with data base operations
 class ProductRepository {
