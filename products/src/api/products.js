@@ -83,11 +83,11 @@ module.exports = (app) => {
         const productId = req.params.id;
 
         try {
-            const { data } = await service.GetProductPayload(_id, {productId}, 'REMOVE_FROM_WISHLIST')
+            const { data } = await service.GetProductPayload(_id, {productId}, 'REMOVE_FROM_WISHLIST');
         
             PublishCustomerEvent(data);
-            
-            return res.status(200).json(wishlist);
+
+            return res.status(200).json(data.data.product);
         } catch (err) {
             next(err)
         }
@@ -96,14 +96,21 @@ module.exports = (app) => {
 
     app.put('/cart',UserAuth, async (req,res,next) => {
         
-        const { _id, qty } = req.body;
+        const { _id } = req.user;
         
-        try {     
-            const product = await service.GetProductById(_id);
+        try {    
+            
+            const { data } = await service.GetProductPayload(_id, {productId : req.body._id, qty : req.body.qty}, 'ADD_TO_CART')
+            
+            PublishCustomerEvent(data);
+            PublishShoppingEvent(data);
+
+            const response = {
+                product : data.data.product,
+                unit : data.data.qty
+            }
     
-            const result =  await customerService.ManageCart(req.user._id, product, qty, false);
-    
-            return res.status(200).json(result);
+            return res.status(200).json(response);
             
         } catch (err) {
             next(err)
