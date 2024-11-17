@@ -6,7 +6,7 @@ module.exports = (app) => {
     app.get('/app-events', async(req, res, next) => {
         const {payload} = req.body;
 
-        product.SubscribeEvents(payload);
+     //   product.SubscribeEvents(payload);
 
         console.log("shopping product record event=====");
 
