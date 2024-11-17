@@ -83,8 +83,10 @@ module.exports = (app) => {
         const productId = req.params.id;
 
         try {
-            const product = await service.GetProductById(productId);
-            const wishlist = await customerService.AddToWishlist(_id, product)
+            const { data } = await service.GetProductPayload(_id, {productId}, 'REMOVE_FROM_WISHLIST')
+        
+            PublishCustomerEvent(data);
+            
             return res.status(200).json(wishlist);
         } catch (err) {
             next(err)
