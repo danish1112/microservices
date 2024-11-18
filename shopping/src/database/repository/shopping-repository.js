@@ -43,7 +43,6 @@ class ShoppingRepository {
           const { _id } = item;
     
           if (cart) {
-            console.log("cart ==>", cart);
             let isExist = false
 
             let cartItems = cart.items;
