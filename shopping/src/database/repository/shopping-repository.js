@@ -74,7 +74,6 @@ class ShoppingRepository {
             })
           }
         } catch (err) {
-          console.log("err =>", err);
           throw new APIError(
             "API Error",
             STATUS_CODES.INTERNAL_ERROR,
