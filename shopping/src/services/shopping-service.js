@@ -25,6 +25,7 @@ class ShoppingService {
       const orders = await this.repository.Orders(customerId);
       return FormateData(orders);
     } catch (err) {
+      console.log("err ==>", err);
       throw new APIError("Data Not found", err);
     }
   }
