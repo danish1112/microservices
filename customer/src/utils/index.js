@@ -37,7 +37,6 @@ module.exports.ValidateSignature = async (req) => {
     req.user = payload;
     return true;
   } catch (error) {
-    console.log(error);
     return false;
   }
 };
