@@ -44,7 +44,6 @@ const ErrorHandler = async(err,req,res,next) => {
     process.on('uncaughtException', (error) => {
         errorLogger.logError(error);
         if(errorLogger.isTrustError(err)){
-            //process exist // need restart
         }
     })
     
