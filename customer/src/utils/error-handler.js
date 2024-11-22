@@ -48,9 +48,6 @@ const ErrorHandler = async(err,req,res,next) => {
         }
     })
     
-    // console.log(err.description, '-------> DESCRIPTION')
-    // console.log(err.message, '-------> MESSAGE')
-    // console.log(err.name, '-------> NAME')
     if(err){
         await errorLogger.logError(err);
         if(errorLogger.isTrustError(err)){
