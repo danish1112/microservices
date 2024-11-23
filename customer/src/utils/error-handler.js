@@ -45,7 +45,6 @@ const ErrorHandler = async(err,req,res,next) => {
         errorLogger.logError(error);
         if(errorLogger.isTrustError(err)){
         }
-        
     })
     
     if(err){
