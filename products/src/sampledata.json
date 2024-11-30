@@ -16,8 +16,7 @@
     "banner":"http://codergogoi.com/youtube/images/broccoli.jpeg",
     "unit":1,
     "price":280, 
-    "available":true,
-    "suplier":"Golden seed firming"
+    "available":true
 },
 {
     "name":"Cauliflower",
