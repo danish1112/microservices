@@ -12,9 +12,7 @@
 {
     "name":"Cauliflower",
     "desc":"great Quality of Fresh Vegetable",
-    "type":"vegetables",
-    "banner":"http://codergogoi.com/youtube/images/cauliflower.jpeg",
-    "unit":1,
+    "type":"vegetables"
 },
 {
     "name":"Olive Oil",
