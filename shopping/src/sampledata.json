@@ -4,10 +4,6 @@
     "desc":"great Quality of Mango",
     "type":"fruits",
     "banner":"http://codergogoi.com/youtube/images/alphonso.jpeg",
-    "unit":1,
-    "price":300, 
-    "available":true,
-    "suplier":"Golden seed firming"
 },
 {
     "name":"Apples",
