@@ -5,8 +5,7 @@
     "type":"fruits",
     "banner":"http://codergogoi.com/youtube/images/langra.jpeg",
     "unit":1,
-    "price":280, 
-    "available":true
+    "price":280,
 },
 {
     "name":"Broccoli",
