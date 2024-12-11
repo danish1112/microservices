@@ -5,8 +5,7 @@
     "type":"vegetables",
     "banner":"http://codergogoi.com/youtube/images/cauliflower.jpeg",
     "unit":1,
-    "price":280, 
-    "available":true
+    "price":280
 },
 {
     "name":"Olive Oil",
