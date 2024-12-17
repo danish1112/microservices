@@ -1,6 +1,7 @@
 [
 {
-  "name":"Olive Oil"       
+  "name":"Olive Oil",
+  "test" : "data"    
 }  
 ] 
  
