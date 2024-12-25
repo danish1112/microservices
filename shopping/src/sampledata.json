@@ -3,7 +3,6 @@
   "name":"Olive Oil",
   "test" : "data",
   "isPaid": false, 
-  "rollno" : 7,
   "products" : ["apples", "shawl 2", "take"]
 }
 ]   
