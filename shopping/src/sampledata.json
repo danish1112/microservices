@@ -2,7 +2,7 @@
 {
   "name":"Olive Oil",
   "test" : "data",
-  "isPaid": false, 
+  "isPaid": false,
   "products" : ["apples", "shawl 2", "take"]
 }
 ]   
